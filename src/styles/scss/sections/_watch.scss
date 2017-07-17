@@ -1,0 +1,81 @@
+// ---- WATCH ----
+
+.watch {
+    background-color: #FBCF01;
+    background-image: url('#{$images}watch-bg.jpg');
+}
+
+.watch-heading {
+    font-family: $type-headings;
+    text-transform: uppercase;
+    color: #50120E;
+    padding-top: 45px;
+    line-height: 1.1em;
+    letter-spacing: .02em;
+    font-weight: 400;
+
+    .one {
+        font-size: 2.75em;
+    }
+
+    .two {
+        font-size: 2.35em;
+    }
+
+    .three {
+        font-size: 1.9em;
+    }
+}
+
+.watch-cta {
+    font-family: $type-sans;
+    font-size: 28px;
+    color: #FBCF01;
+    letter-spacing: 1.75px;
+    line-height: 34px;
+    text-shadow: 0px 1px 2px #310806;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+span {
+
+    &.watch-cta {
+        position: absolute;
+        display: block;
+        top: 100px;
+        left: 135px;
+        width: 45%;
+    }
+}
+
+.watch-cta-hand {
+
+    img {
+        position: absolute;
+        display: block;
+        top: 100px;
+        left: 415px;
+        width: 20%;
+    }
+}
+
+.watch-cta-img {
+    background-image: url('#{$images}watch-sign-toned-maroon.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    width: 100%;
+    height: 450px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.secondary-cta-body {
+    color: #310806;
+}
+
+.secondary-cta {
+    color: inherit;
+}

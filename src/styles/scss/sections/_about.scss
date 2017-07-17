@@ -1,0 +1,185 @@
+/*----ABOUT----*/
+
+.about {
+    background-image: url('#{$images}about-bg.jpg');
+    background-color: #F1D291;
+    text-align: center;
+}
+
+.border-repeat {
+    background-image: url('#{$images}border-repeat.png');
+    background-repeat: repeat-y;
+    background-position: center;
+}
+
+.type-hero {
+    font-family: $type-headings;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    line-height: 0;
+    color: #310806;
+}
+
+.who.type-hero {
+    font-size: 7.688em;
+    padding: 145px 0px;
+    letter-spacing: .02em;
+    font-weight: 400;
+}
+
+.your.type-hero {
+    font-size: 9.313em;
+    padding-bottom: 145px;
+}
+
+.daddy.type-hero {
+    font-size: 6.250em;
+    padding-bottom: 100px;
+}
+
+.border {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.synopsis {
+    padding: 0px 225px 55px 225px;
+}
+
+/*----ACTOR----*/
+
+.grid-actor-right {
+    padding-right: 11px;
+}
+
+.grid-actor-middle {
+    padding-right: 11px;
+    padding-left: 11px;
+}
+
+.grid-actor-left {
+    padding-left: 11px;
+}
+
+.actor-image {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    display: block;
+    padding: 0;
+    margin: 0;
+    transition: all 500ms ease;
+}
+
+.actor-image.larger {
+    min-height: 300px;
+}
+
+.actor-image.smaller {
+    min-height: 225px;
+}
+
+.actor .actor-bg {
+    background-color: #740B03;
+    height: 480px;
+    box-shadow: 0px 0px 18px 6px rgba(0,0,0,0.59);
+    margin: 0;
+    padding: 10px;
+    margin-bottom: 140px;
+    transition: all 500ms ease;
+}
+
+.actor:hover .actor-bg {
+    background-color: #FBCF01;
+}
+
+.actor #sandler {
+    background-image: url('#{$images}sandler-toned.png')
+}
+
+.actor:hover #sandler {
+    background-image: url('#{$images}sandler.png')
+}
+
+.actor #schneider {
+    background-image: url('#{$images}schneider-toned.png')
+}
+
+.actor:hover #schneider {
+    background-image: url('#{$images}schneider.png')
+}
+
+.actor #lautner {
+    background-image: url('#{$images}lautner-toned.png')
+}
+
+.actor:hover #lautner {
+    background-image: url('#{$images}lautner.png')
+}
+
+.actor #garcia {
+    background-image: url('#{$images}garcia-toned.png')
+}
+
+.actor:hover #garcia {
+    background-image: url('#{$images}garcia.png')
+}
+
+.actor #crews {
+    background-image: url('#{$images}crews-toned.png')
+}
+
+.actor:hover #crews {
+    background-image: url('#{$images}crews.png')
+}
+
+.actor #wilson {
+    background-image: url('#{$images}wilson-toned.png')
+}
+
+.actor:hover #wilson {
+    background-image: url('#{$images}wilson.png')
+}
+
+.char-name {
+    padding: 30px;
+    background-image: url('#{$images}watch-ink-swash.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #740B03;
+    letter-spacing: .05em;
+    transition: all 500ms ease;
+}
+
+.actor:hover .char-name {
+    color: #FBCF01;
+}
+
+.actor-name {
+    font-family: $type-headings;
+    text-transform: uppercase;
+    font-size: 1.875em;
+    line-height: 1.15em;
+    letter-spacing: .02em;
+    font-weight: 400;
+    text-align: center;
+    color: #310806;
+}
+
+p.actor-bio {
+    height: 175px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 0px 12px;
+}
+
+p.actor-bio::-webkit-scrollbar {
+    width: 8px;
+}
+
+p.actor-bio::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: #5D0A03;
+}

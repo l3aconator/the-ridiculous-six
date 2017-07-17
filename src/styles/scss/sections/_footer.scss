@@ -1,0 +1,113 @@
+/*----FOOTER----*/
+
+.footer-pad {
+    padding: 88px 0px 0px 0px;
+}
+
+.footer {
+    background-image: url('#{$images}footer-bg.jpg');
+    background-color: #201714;
+}
+
+.footer-logo {
+    display: block;
+    width: 100%;
+    padding-bottom: 20px
+}
+
+.footer-heading {
+    font-family: $type-sans;
+    letter-spacing: .01em;
+    text-transform: uppercase;
+    color: #C76100;
+    padding-left: 30px;
+    margin: 0;
+}
+
+.nav-list-item {
+    font-family: "bodoni-urw", bodoni, baskerville, "Times New Roman", serif;
+    list-style: none;
+    margin-bottom: 10px;
+    padding-left: 30px;
+
+    a {
+        text-decoration: none;
+        color: #F1D291;
+
+        &:hover,
+        &:focus,
+        &:active {
+            text-decoration: underline;
+        }
+    }
+
+    img {
+        display: inline;
+        width: 100%;
+    }
+}
+
+.footer-position {
+    position: relative;
+}
+
+.netflix-logo {
+    position: absolute;
+    width: auto;
+    display: block;
+    height: 24px;
+    left: 150px;
+    top: 80px;
+}
+
+.share {
+
+    img {
+        width: 50%;
+    }
+}
+
+.donkey-img {
+    width: 100%;
+    display: block;
+}
+
+.footer-review {
+    font-family: "bodoni-urw", bodoni, baskerville, "Times New Roman", serif;
+    text-align: center;
+    color: #F1D291;
+}
+
+.large-quote-glyph {
+    font-family: $type-headings;
+    font-size: 144px;
+    line-height: 0em;
+    display: block;
+    color: #C76100;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+.review-body {
+    padding: 0px 30px;
+}
+
+.reviewer {
+    color: #C76100;
+    display: block;
+    margin-top: 20px;
+}
+
+.footer-copyright {
+    position: relative;
+    font-family: "bodoni-urw", bodoni, baskerville, "Times New Roman", serif;
+    font-size: 0.8125em;
+    color: #6C4E43;
+}
+
+.copyright-text {
+    position: absolute;
+    bottom: 30px;
+    left: 445px;
+    display: block;
+}

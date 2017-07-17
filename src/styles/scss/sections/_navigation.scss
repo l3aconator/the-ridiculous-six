@@ -1,0 +1,97 @@
+/*----GLOBAL----*/
+
+body {
+    margin: 0;
+}
+
+.header-logo img {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: block;
+    padding: 91px 0px 113px 0px;
+    max-width: 432px;
+    width: 100%;
+}
+
+.bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sticky {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    border-top: 0;
+    background-color: #C76100;
+}
+
+.container {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.nav {
+    background-color: #C76100;
+}
+
+.main-nav-list {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+/*    padding: 20px;*/
+    margin: 0;
+    text-align: center;
+}
+
+.main-nav-list-item {
+    display: inline-block;
+    padding: 10px 5px 20px 5px;
+    margin: 0px 50px;
+}
+
+.main-nav-list-item a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: $type-sans;
+    color: #310806;
+    padding-top: 10px;
+    display: block;
+}
+
+.main-nav-list-item a:hover {
+    background-image: url('#{$images}nav-hover-state.png');
+    background-repeat: repeat-x;
+    background-position: top;
+    display: block;
+    padding-top: 10px;
+}
+
+.watch-nav-button {
+    background-image: url('#{$images}watch-ink-swash.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0px 50px 5px 50px;
+}
+
+.watch-nav-button a {
+    color: #C76100;
+}
+
+.watch-nav-button a:hover {
+    background-image: none;
+}
+
+.section-pad {
+    padding: 140px 0px;
+}

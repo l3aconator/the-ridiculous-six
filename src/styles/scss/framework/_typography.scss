@@ -1,0 +1,21 @@
+/*----TYPOGRAPHY----*/
+
+p {
+    font-family: "bodoni-urw", bodoni, baskerville, "Times New Roman", serif;
+    line-height: 1.65em;
+}
+
+h6 {
+    font-family: $type-sans;
+    font-size: 1.125em;
+}
+
+h6.char-name {
+    font-family: $type-sans;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+ul {
+    padding: 0;
+}
