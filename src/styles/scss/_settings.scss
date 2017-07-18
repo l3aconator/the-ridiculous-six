@@ -1,4 +1,19 @@
+// ---- Images ----
 $images: '../../images/';
 
+
+// ---- Grid ----
+$container: 80%;
+$grid--gutter: 30px;
+
+// ---- Breakpoints ----
+$breakpoint--mobile: 480px;
+$breakpoint--tablet: 768px;
+$breakpoint--desktop: 480px;
+
+// ---- Typography ----
 $type-sans: 'franklin-gothic-urw', helvetica, arial, sans-serif;
 $type-headings: 'Ultra', serif;
+
+// ---- Color ----
+$color--orange: #C76100;

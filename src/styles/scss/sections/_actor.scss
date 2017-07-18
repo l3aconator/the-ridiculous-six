@@ -1,0 +1,148 @@
+// ---- ACTOR ---- 
+
+.grid-actor-right {
+    padding-right: 11px;
+}
+
+.grid-actor-middle {
+    padding-right: 11px;
+    padding-left: 11px;
+}
+
+.grid-actor-left {
+    padding-left: 11px;
+}
+
+.actor-image {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    display: block;
+    padding: 0;
+    margin: 0;
+    transition: all 500ms ease;
+
+    &.larger {
+        min-height: 300px;
+    }
+
+    &.smaller {
+        min-height: 225px;
+    }
+}
+
+.char-name {
+    padding: 30px;
+    background-image: url('#{$images}watch-ink-swash.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #740B03;
+    letter-spacing: .05em;
+    transition: all 500ms ease;
+}
+
+.actor-name {
+    font-family: $type-headings;
+    text-transform: uppercase;
+    font-size: 1.875em;
+    line-height: 1.15em;
+    letter-spacing: .02em;
+    font-weight: 400;
+    text-align: center;
+    color: #310806;
+}
+
+
+p {
+
+    &.actor-bio {
+        height: 175px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        padding: 0px 12px;
+
+        &::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            border-radius: 8px;
+            background-color: #5D0A03;
+        }
+    }
+}
+
+.actor {
+
+    .actor-bg {
+        background-color: #740B03;
+        height: 480px;
+        box-shadow: 0px 0px 18px 6px rgba(0,0,0,0.59);
+        margin: 0;
+        padding: 10px;
+        margin-bottom: 140px;
+        transition: all 500ms ease;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+
+        .actor-bg {
+            background-color: #FBCF01;
+        }
+
+        .char-name {
+            color: #FBCF01;
+        }
+
+        #sandler {
+            background-image: url('#{$images}sandler.png')
+        }
+
+        #schneider {
+            background-image: url('#{$images}schneider.png')
+        }
+
+        #lautner {
+            background-image: url('#{$images}lautner.png')
+        }
+
+        #garcia {
+            background-image: url('#{$images}garcia.png')
+        }
+
+        #crews {
+            background-image: url('#{$images}crews.png')
+        }
+
+        #wilson {
+            background-image: url('#{$images}wilson.png')
+        }
+    }
+
+    #sandler {
+        background-image: url('#{$images}sandler-toned.png');
+    }
+
+    #schneider {
+        background-image: url('#{$images}schneider-toned.png')
+    }
+
+    #lautner {
+        background-image: url('#{$images}lautner-toned.png')
+    }
+
+    #garcia {
+        background-image: url('#{$images}garcia-toned.png')
+    }
+
+    #crews {
+        background-image: url('#{$images}crews-toned.png')
+    }
+
+    #wilson {
+        background-image: url('#{$images}wilson-toned.png')
+    }
+}

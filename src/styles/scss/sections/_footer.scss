@@ -1,4 +1,4 @@
-/*----FOOTER----*/
+// ---- FOOTER ---- 
 
 .footer-pad {
     padding: 88px 0px 0px 0px;
@@ -19,7 +19,7 @@
     font-family: $type-sans;
     letter-spacing: .01em;
     text-transform: uppercase;
-    color: #C76100;
+    color: $color--orange;
     padding-left: 30px;
     margin: 0;
 }
@@ -83,7 +83,7 @@
     font-size: 144px;
     line-height: 0em;
     display: block;
-    color: #C76100;
+    color: $color--orange;
     margin-top: 35px;
     margin-bottom: 15px;
 }
@@ -93,7 +93,7 @@
 }
 
 .reviewer {
-    color: #C76100;
+    color: $color--orange;
     display: block;
     margin-top: 20px;
 }

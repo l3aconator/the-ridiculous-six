@@ -1,17 +1,16 @@
-/*----GLOBAL----*/
+// ---- GLOBAL ----
 
-body {
-    margin: 0;
-}
+.header-logo {
 
-.header-logo img {
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    display: block;
-    padding: 91px 0px 113px 0px;
-    max-width: 432px;
-    width: 100%;
+    img {
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        display: block;
+        padding: 91px 0px 113px 0px;
+        max-width: 432px;
+        width: 100%;
+    }
 }
 
 .bg {
@@ -27,13 +26,7 @@ body {
     top: 0;
     z-index: 100;
     border-top: 0;
-    background-color: #C76100;
-}
-
-.container {
-    max-width: 960px;
-    margin-left: auto;
-    margin-right: auto;
+    background-color: $color--orange;
 }
 
 .hidden {
@@ -41,14 +34,14 @@ body {
 }
 
 .nav {
-    background-color: #C76100;
+    background-color: $color--orange;
+    transition: all 500ms ease-in;
 }
 
 .main-nav-list {
     display: block;
     margin-left: auto;
     margin-right: auto;
-/*    padding: 20px;*/
     margin: 0;
     text-align: center;
 }
@@ -57,23 +50,25 @@ body {
     display: inline-block;
     padding: 10px 5px 20px 5px;
     margin: 0px 50px;
-}
 
-.main-nav-list-item a {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: $type-sans;
-    color: #310806;
-    padding-top: 10px;
-    display: block;
-}
+    a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: $type-sans;
+        color: #310806;
+        padding-top: 10px;
+        display: block;
 
-.main-nav-list-item a:hover {
-    background-image: url('#{$images}nav-hover-state.png');
-    background-repeat: repeat-x;
-    background-position: top;
-    display: block;
-    padding-top: 10px;
+        &:hover,
+        &:active,
+        &:focus {
+            background-image: url('#{$images}nav-hover-state.png');
+            background-repeat: repeat-x;
+            background-position: top;
+            display: block;
+            padding-top: 10px;
+        }
+    }
 }
 
 .watch-nav-button {
@@ -82,16 +77,25 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     padding: 0px 50px 5px 50px;
+
+    a {
+        color: $color--orange;
+
+        &:hover,
+        &:active,
+        &:focus {
+            background-image: none;
+        }
+    }
 }
 
-.watch-nav-button a {
-    color: #C76100;
-}
+@media (max-width: 550px) {
 
-.watch-nav-button a:hover {
-    background-image: none;
-}
+    .header-logo {
 
-.section-pad {
-    padding: 140px 0px;
+        img {
+            padding: 91px 44px 113px 44px;
+            width: 100%;
+        }
+    }
 }

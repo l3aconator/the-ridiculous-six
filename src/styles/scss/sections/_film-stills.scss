@@ -1,4 +1,5 @@
-/*---FILM STILLS---*/
+// --- FILM STILLS ---
+
 .film-stills {
     background-image: url('#{$images}film-still-one.jpg');
     background-position: center;
@@ -16,19 +17,31 @@
 .hand {
     position: absolute;
     width: 8%;
+
+    &.left {
+        top: 50px;
+        left: 25px;
+    }
+
+    &.right {
+        top: 50px;
+        left: 860px;
+    }
 }
 
-.hand.left {
-    top: 50px;
-    left: 25px;
-}
-
-.hand.right {
-    top: 50px;
-    left: 860px;
-}
-
-.header, .cast {
+.header,
+.cast {
     background-image: url('#{$images}main-bg.jpg');
     background-color: #50120E;
+}
+
+
+@media (max-width: $breakpoint--mobile) {
+
+    .header,
+    .cast {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
 }

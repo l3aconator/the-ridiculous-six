@@ -49,9 +49,10 @@ span {
     }
 }
 
-.watch-cta-hand {
 
-    img {
+img {
+
+    &.watch-cta-hand {
         position: absolute;
         display: block;
         top: 100px;
