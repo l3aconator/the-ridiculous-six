@@ -28,7 +28,7 @@
 
     a {
         text-decoration: none;
-        color: #F1D291;
+        color: $color--cream;
 
         &:hover,
         &:focus,
@@ -73,7 +73,7 @@
 .footer-review {
     font-family: "bodoni-urw", bodoni, baskerville, "Times New Roman", serif;
     text-align: center;
-    color: #F1D291;
+    color: $color--cream;
 }
 
 .large-quote-glyph {

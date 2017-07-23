@@ -2,7 +2,7 @@
 
 .about {
     background-image: url('#{$images}about-bg.jpg');
-    background-color: #F1D291;
+    background-color: $color--cream;
     text-align: center;
 }
 
@@ -18,7 +18,7 @@
     padding: 0;
     margin: 0;
     line-height: 0;
-    color: #310806;
+    color: $color--brown;
 
     &.who {
         font-size: 7.688em;

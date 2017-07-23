@@ -37,7 +37,7 @@
     background-image: url('#{$images}watch-ink-swash.png');
     background-repeat: no-repeat;
     background-position: center;
-    color: #740B03;
+    color: $color--red;
     letter-spacing: .05em;
     transition: all 500ms ease;
 }
@@ -50,7 +50,7 @@
     letter-spacing: .02em;
     font-weight: 400;
     text-align: center;
-    color: #310806;
+    color: $color--brown;
 }
 
 
@@ -76,7 +76,7 @@ p {
 .actor {
 
     .actor-bg {
-        background-color: #740B03;
+        background-color: $color--red;
         height: 480px;
         box-shadow: 0px 0px 18px 6px rgba(0,0,0,0.59);
         margin: 0;
@@ -90,11 +90,11 @@ p {
     &:focus {
 
         .actor-bg {
-            background-color: #FBCF01;
+            background-color: $color--yellow;
         }
 
         .char-name {
-            color: #FBCF01;
+            color: $color--yellow;
         }
 
         #sandler {
