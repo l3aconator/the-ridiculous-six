@@ -42,4 +42,11 @@ $(document).ready(function() {
             }
         }
     });
+
+    $('.still-slider').bxSlider({
+        slideWidth: 2000,
+        minSlides: 1,
+        maxSlides: 1,
+        slideMargin: 0
+    });
 });
