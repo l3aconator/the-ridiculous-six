@@ -17,6 +17,10 @@ $(document).ready(function() {
         stickyNav();
     });
 
+    $('.nav.nav-container').click(function() {
+        $(this).toggleClass('active');
+    });
+
     // Select all links with hashes
     $('a[href*="#"]')
     // Remove links that don't actually link to anything
