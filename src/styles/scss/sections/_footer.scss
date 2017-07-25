@@ -47,33 +47,43 @@
     position: relative;
 }
 
-.netflix-logo {
-    position: absolute;
-    width: auto;
-    display: block;
-    height: 10%;
-    left: 50%;
-    top: 33%;
-}
+.footer-share {
+    padding-left: 0 !important;
 
-// testing
+    .footer-heading {
+        padding-left: 0 !important;
+    }
 
-.share {
+    .share {
+        display: inline-block;
+        padding-left: 0;
+        transition: all 500ms ease;
 
-    img {
-        width: 50%;
+        img {
+            width: 55%;
+            padding-bottom: 20px;
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+            transform: scale(.9) rotate(20deg);
+        }
     }
 }
 
 .donkey-img {
-    width: 100%;
+    width: 45%;
     display: block;
 }
 
 .footer-review {
-    font-family: "bodoni-urw", bodoni, baskerville, "Times New Roman", serif;
+    font-family: $type-serif;
     text-align: center;
     color: $color--cream;
+    max-width: 60%;
+    margin: 0 auto;
+    font-size: 2em;
 }
 
 .large-quote-glyph {
@@ -94,18 +104,60 @@
     color: $color--orange;
     display: block;
     margin-top: 20px;
+    font-size: .75em;
 }
 
 .footer-copyright {
     position: relative;
-    font-family: "bodoni-urw", bodoni, baskerville, "Times New Roman", serif;
+    font-family: $type-serif;
     font-size: 0.8125em;
     color: #6C4E43;
 }
 
-.copyright-text {
-    position: absolute;
-    bottom: 30px;
-    left: 445px;
-    display: block;
+@media (max-width: $breakpoint--tablet) {
+
+    .footer-review {
+        font-size: 1.5em;
+        max-width: 80%;
+    }
+
+    .reviewer {
+        font-size: .85em;
+    }
+
+    .footer-heading,
+    .nav-list-item {
+        padding-left: 0px;
+    }
+
+    .footer-heading {
+        padding-top: 30px;
+    }
+
+    .netflix-logo {
+        padding: 30px 0px;
+    }
+
+    .footer-copyright {
+        padding-bottom: 30px;
+    }
+}
+
+@media (min-width: $breakpoint--tablet) {
+
+    .netflix-logo {
+        position: absolute;
+        width: auto;
+        display: block;
+        height: 10%;
+        left: 50%;
+        top: 50%;
+    }
+
+    .copyright-text {
+        position: absolute;
+        bottom: 30px;
+        left: 44%;
+        display: block;
+    }
 }

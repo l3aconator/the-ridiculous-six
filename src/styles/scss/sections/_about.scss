@@ -6,10 +6,12 @@
     text-align: center;
 }
 
-.border-repeat {
-    background-image: url('#{$images}border-repeat.png');
-    background-repeat: repeat-y;
-    background-position: center;
+.border {
+
+    &.top,
+    &.bottom {
+        display: none;
+    }
 }
 
 .type-hero {
@@ -21,29 +23,75 @@
     color: $color--brown;
 
     &.who {
-        font-size: 7.688em;
-        padding: 145px 0px;
+        font-size: 4.75em;
+        padding: 40% 0px;
         letter-spacing: .02em;
         font-weight: 400;
     }
 
     &.your {
-        font-size: 9.313em;
-        padding-bottom: 145px;
+        font-size: 6em;
+        padding-bottom: 35%;
     }
 
     &.daddy {
-        font-size: 6.250em;
+        font-size: 4em;
         padding-bottom: 100px;
     }
 }
 
-.border {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
+@media (max-width: $breakpoint--tablet) {
+    .about {
+
+        .section-pad {
+            padding: 60px 0px;
+            padding-top: 0px;
+        }
+    }
 }
 
-.synopsis {
-    padding: 0px 225px 55px 225px;
+@media (min-width: $breakpoint--tablet) {
+
+
+    .border {
+
+        &.top,
+        &.bottom {
+            display: block;
+        }
+    }
+
+    .border-repeat {
+        background-image: url('#{$images}border-repeat.png');
+        background-repeat: repeat-y;
+        background-position: center;
+    }
+
+    .type-hero {
+
+        &.who {
+            font-size: 7.688em;
+            padding: 12% 0px;
+        }
+
+        &.your {
+            font-size: 9.313em;
+            padding-bottom: 12%;
+        }
+
+        &.daddy {
+            font-size: 6.250em;
+        }
+    }
+
+    .border {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .synopsis {
+        padding: 0px 225px 55px 225px;
+    }
+
 }

@@ -1,4 +1,4 @@
-// ---- ACTOR ---- 
+// ---- ACTOR ----
 
 .grid-actor-right {
     padding-right: 11px;
@@ -37,7 +37,7 @@
     background-image: url('#{$images}watch-ink-swash.png');
     background-repeat: no-repeat;
     background-position: center;
-    color: $color--red;
+    color: $color--cream;
     letter-spacing: .05em;
     transition: all 500ms ease;
 }
@@ -47,20 +47,22 @@
     text-transform: uppercase;
     font-size: 1.875em;
     line-height: 1.15em;
-    letter-spacing: .02em;
+    letter-spacing: .15em;
     font-weight: 400;
     text-align: center;
-    color: $color--brown;
+    color: $color--cream;
+    transition: all 500ms ease;
 }
-
 
 p {
 
     &.actor-bio {
-        height: 175px;
+        height: 175 + 50px;
         overflow-y: scroll;
         overflow-x: hidden;
         padding: 0px 12px;
+        color: $color--cream;
+        transition: all 500ms ease;
 
         &::-webkit-scrollbar {
             width: 8px;
@@ -76,12 +78,12 @@ p {
 .actor {
 
     .actor-bg {
-        background-color: $color--red;
-        height: 480px;
+        background-color: lighten($color--red, 8%);
+        height: 480 + 50px;
         box-shadow: 0px 0px 18px 6px rgba(0,0,0,0.59);
         margin: 0;
         padding: 10px;
-        margin-bottom: 140px;
+        margin-bottom: 70px;
         transition: all 500ms ease;
     }
 
@@ -89,12 +91,24 @@ p {
     &:active,
     &:focus {
 
+        p {
+
+            &.actor-bio {
+                color: $color--brown;
+            }
+        }
+
         .actor-bg {
-            background-color: $color--yellow;
+            background-color: $color--cream;
+        }
+
+        .actor-name {
+            color: $color--brown;
         }
 
         .char-name {
-            color: $color--yellow;
+            color: $color--cream;
+            transform: scale(.95) rotate(8deg);
         }
 
         #sandler {
@@ -145,4 +159,66 @@ p {
     #wilson {
         background-image: url('#{$images}wilson-toned.png')
     }
+}
+
+@media (max-width: $breakpoint--tablet) {
+
+    .actor {
+
+        p {
+
+            &.actor-bio {
+                color: $color--brown;
+                height: 100%;
+            }
+        }
+
+        .actor-bg {
+            background-color: $color--cream;
+            height: 100%;
+        }
+
+        .actor-name {
+            color: $color--brown;
+        }
+
+        .char-name {
+            color: $color--cream;
+        }
+
+        #sandler {
+            background-image: url('#{$images}sandler.png')
+        }
+
+        #schneider {
+            background-image: url('#{$images}schneider.png')
+        }
+
+        #lautner {
+            background-image: url('#{$images}lautner.png')
+        }
+
+        #garcia {
+            background-image: url('#{$images}garcia.png')
+        }
+
+        #crews {
+            background-image: url('#{$images}crews.png')
+        }
+
+        #wilson {
+            background-image: url('#{$images}wilson.png')
+        }
+    }
+}
+
+@media (min-width: $breakpoint--tablet) {
+
+    .actor {
+
+        .actor-bg {
+            margin-bottom: 140px;
+        }
+    }
+
 }

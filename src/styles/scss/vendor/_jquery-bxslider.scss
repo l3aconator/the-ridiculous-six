@@ -183,3 +183,20 @@ ul.bxslider {
     font-size: .85em;
     padding: 10px;
 }
+
+@media (max-width: $breakpoint--tablet) {
+
+    /* DIRECTION CONTROLS (NEXT / PREV) */
+    .bx-wrapper .bx-prev {
+        left: 10px;
+        opacity: .5;
+    }
+    .bx-wrapper .bx-next {
+        right: 10px;
+        opacity: .5;
+    }
+
+    .bx-wrapper .bx-controls-direction a {
+        width: 15%;
+    }
+}
