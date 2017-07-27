@@ -5,9 +5,9 @@ $(document).ready(function() {
         var scrollTop = $(window).scrollTop();
 
         if (scrollTop > stickyNavTop) {
-            $('.nav').addClass('sticky');
+            $('.nav-container').addClass('sticky');
         } else {
-            $('.nav').removeClass('sticky');
+            $('.nav-container').removeClass('sticky');
         }
     };
 
@@ -15,10 +15,21 @@ $(document).ready(function() {
 
     $(window).scroll(function() {
         stickyNav();
+
+        if ($('.nav-container').hasClass('active')) {
+            $('.nav.nav-container').removeClass('active');
+            $('.js-menu').text('Menu');
+        }
     });
 
     $('.nav.nav-container').click(function() {
         $(this).toggleClass('active');
+
+        if ($(this).hasClass('active')) {
+            $('.js-menu').text('Close');
+        } else {
+            $('.js-menu').text('Menu');
+        }
     });
 
     // Select all links with hashes
